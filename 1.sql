@@ -27,7 +27,7 @@ CREATE TABLE mark(
   CONSTRAINT mark_fks Foreign Key (sid)  REFERENCES student(sid),
   CONSTRAINT mark_fkc Foreign Key (cid)  REFERENCES course(cid)
 );
-#insert复制出错需要修改
-INSERT INTO mark(sid, cid, score) VALUES (1, 1, 80),(2,1,85),(3,1,90),(1,2,60),(2,2,90),(3,2,75),(1, 3, 95),(2,3, 75),(3,3,85);
-INSERT INTO mark(sid, cid, score) VALUES (1, 1, 80),(2,1,85),(3,1,90),(1,2,60),(2,2,90),(3,2,75),(1, 3, 95),(2,3, 75),(3,3,85);
+
+INSERT INTO student(sname, gender) VALUES ('Tom', 'male'),('Jack', 'male'),('Rose', 'female');
+INSERT INTO course (cname) VALUES ('math'),('physics'),('chemistry');
 INSERT INTO mark(sid, cid, score) VALUES (1, 1, 80),(2,1,85),(3,1,90),(1,2,60),(2,2,90),(3,2,75),(1, 3, 95),(2,3, 75),(3,3,85);
